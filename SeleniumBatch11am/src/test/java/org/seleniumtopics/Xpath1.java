@@ -6,7 +6,8 @@ import org.openqa.selenium.chrome.ChromeDriver;
 
 import io.github.bonigarcia.wdm.WebDriverManager;
 
-public class Xpath1 {
+public class Xpath1 
+{
 
 	public static void main(String[] args) 
 	{
@@ -65,6 +66,19 @@ public class Xpath1 {
 		driver.findElement(By.xpath("//a[text()='Garry.White']//ancestor::table")).click();
 		
 		driver.findElement(By.xpath("//table[@id='resultTable']//descendant::a[text()='Garry.White']")).click();
-
+		
+		driver.get("https://demo.automationtesting.in/Register.html");
+		
+		driver.findElement(By.xpath("//label[text()='Full Name* ']//following::input[1]")).sendKeys("Monika");
+		
+		driver.get("https://www.saucedemo.com/");
+		
+		driver.findElement(By.xpath("https://www.saucedemo.com/")).sendKeys("moni@123");
+		
+		driver.get("https://www.redbus.in/");
+		
+		driver.findElement(By.xpath("//button[text()='Search buses']//preceding::div[contains(@class,'dateInput')]")).click();
+		
+		driver.findElement(By.xpath("//button[text()='Search buses']//preceding-siblin::div")).click();
 	}
 }
