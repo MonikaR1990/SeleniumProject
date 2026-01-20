@@ -34,18 +34,10 @@ public class AdvanceTable1 {
 		}
 		
 		WebElement nextBtn = driver.findElement(By.xpath("//button[text()='›']"));
-
-		if(nextBtn.getAttribute("class").contains("disabled"))
-		{
-			System.out.println("Pagination Completed");
-			break;
-		}
-		
 		nextBtn.click();
-		Thread.sleep(2000);
-		}
 		
-		driver.quit();
+		}
+
 	}
 
 }

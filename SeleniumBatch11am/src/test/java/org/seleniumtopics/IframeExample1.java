@@ -16,9 +16,9 @@ public class IframeExample1 {
 		WebDriver driver = new ChromeDriver();
 		driver.get("https://letcode.in/frame");
 		driver.manage().window().maximize();
-		
-		//driver.switchTo().frame(0);
-		
+	
+		//driver.switchTo().frame(0)
+	
 		driver.switchTo().frame("firstFr");
 		
 		WebElement fname = driver.findElement(By.name("fname"));
