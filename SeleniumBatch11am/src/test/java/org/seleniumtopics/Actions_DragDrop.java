@@ -24,7 +24,10 @@ public class Actions_DragDrop {
 
 		Actions act = new Actions(driver);
 		
-		act.dragAndDrop(dragBox, dropBox).perform();
+		//act.dragAndDrop(dragBox, dropBox).perform();
+		
+		act.clickAndHold(dragBox).moveToElement(dropBox).release().perform();
+		
 		
 		
 	}

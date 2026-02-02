@@ -71,7 +71,9 @@ public class CssSelector {
 		
 		driver.findElement(By.cssSelector("input[placeholder^='First']")).sendKeys("Monika");
 		
+		//End-with
 		
+		driver.findElement(By.cssSelector("input[placeholder$='Name']")).sendKeys("Monika");
 		
 		
 		
