@@ -14,14 +14,13 @@ public class Slider1 {
 	{
 		WebDriverManager.chromedriver().setup();
 		WebDriver driver = new ChromeDriver();
-		driver.get("https://testautomationpractice.blogspot.com/#");
+		//driver.get("https://testautomationpractice.blogspot.com/#");
 		driver.get("https://www.olx.in/en-in/for-sale-houses-apartments_c1725");
 		
 		driver.manage().window().maximize();
 		
 		
-		Actions act = new Actions(driver);
-		
+				
 		/*WebElement slide = driver.findElement(By.xpath("//div[@id='slider-range']//div"));
 		
 		
@@ -37,6 +36,9 @@ public class Slider1 {
 		//WebElement olxSlide = driver.findElement(By.xpath("//div[@class='rc-slider-handle rc-slider-handle-1'][1]"));
 		
 		WebElement olxSlide = driver.findElement(By.cssSelector(".rc-slider-handle.rc-slider-handle-1"));
+		
+		Actions act = new Actions(driver);
+
 		
 		act.clickAndHold(olxSlide).moveByOffset(80, 0).release().perform();
 		
